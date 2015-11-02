@@ -1,0 +1,28 @@
+package Chapter2;
+
+public class Number28 {
+	public static int a = 123, len, counter = 0, arifmeticsumm;
+	public static String s, b, c;
+
+	public static void main(String[] args) {
+		s = Integer.toString(a);
+		len=s.length();
+
+		for (int i = 0; i < s.length(); i++) {
+
+			if (counter == 0) {
+				b = s.substring(i, i++);
+				c = s.substring(i++, i + 1);
+				arifmeticsumm = Integer.valueOf(b) + Integer.valueOf(c);
+				counter = 1;
+			} else {
+				b = s.substring(i, i);
+				arifmeticsumm = arifmeticsumm + Integer.valueOf(b);
+			}
+		}
+		arifmeticsumm=arifmeticsumm/len;
+		
+		System.out.println(arifmeticsumm);
+	}
+
+}

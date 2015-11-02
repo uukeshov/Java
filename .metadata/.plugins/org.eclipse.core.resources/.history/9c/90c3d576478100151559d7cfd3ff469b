@@ -1,0 +1,36 @@
+package Chapter3;
+
+public class Number18 {
+	public static int startrange = 1000, endrange = 2000, happy_ticket = 0;
+	public static String S, firstrange, lastrange, b, a, a1, b1;
+
+	public static void main(String[] args) {
+		for (int i = startrange; i <= endrange; i++) {
+			S = Integer.toString(i);
+			firstrange = "100";//S.substring(0, 3);
+			lastrange = "001";//S.substring(S.length() - 3, S.length());
+			System.out.println(firstrange);
+			System.out.println(lastrange);
+			a1 = "";
+			b1 = "";
+			for (int j = 0; j < firstrange.length(); j++) {
+				a = firstrange.substring(j, j+1);
+				System.out.println(a);
+				a1 = a1 + a;
+			}
+
+			for (int e = 0; e < lastrange.length(); e++) {
+				b = lastrange.substring(e, e+1);
+				b1 = b1 + b;
+			}
+
+			if (a1 == b1) {
+				happy_ticket++;
+			}
+			System.out.println(happy_ticket+"UUYUU");
+
+		}
+
+	}
+
+}

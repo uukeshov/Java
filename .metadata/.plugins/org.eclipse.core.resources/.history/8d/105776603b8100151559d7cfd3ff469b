@@ -1,0 +1,23 @@
+package Chapter2;
+
+public class Number38 {
+	public static int a = 212335, counter, len, newa, i = 0, k;
+	public static String b;
+	static char d;
+
+	public static void main(String[] args) {
+		b = Integer.toString(a);
+		len = b.length();
+		
+		while (i < len) {
+			d = b.charAt(len-1);
+			System.out.println(d);
+			if (d == '1') {
+				b = b.substring(0, len);
+			}
+			i++;
+		}
+System.out.print(b);
+	}
+
+}

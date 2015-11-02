@@ -1,0 +1,22 @@
+package Chapter3;
+import java.util.Scanner; 
+public class Number8 {
+public static int x1=1223134, x2=0,j=4,x=0;
+public static String c,b;
+	public static void main(String[] args) {
+		
+		c=Integer.toString(x1);
+		
+		for (int i=0;i<1;i++) {
+			b=c.substring(0,j);
+			
+			for (int e=0;e<b.length();e++) {
+				x2=Integer.valueOf(b.charAt(e));
+				x=x+x2;
+			}
+		}
+		System.out.println(x);
+
+	}
+
+}

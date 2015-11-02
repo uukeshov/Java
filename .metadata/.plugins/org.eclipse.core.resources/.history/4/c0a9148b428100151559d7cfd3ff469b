@@ -1,0 +1,32 @@
+package Chapter3;
+import java.util.Scanner; 
+public class Number8 {
+public static int x1=1234, x2=0,j=2,x=0;
+public static String c,b;
+	public static void main(String[] args) {
+		
+		c=Integer.toString(x1);
+		
+		/*Scanner sc  = new Scanner(System.in);
+		System.out.println("Enter amount of digits: ");
+		if(sc.hasNextInt()) { // возвращает истинну если с потока ввода можно считать целое число
+	          j = sc.nextInt(); // считывает целое число с потока ввода и сохраняем в переменную
+	        } else {
+	          System.out.println("Вы ввели не целое число");
+	        }*/
+		
+		for (int i=0;i<j;i++) {
+			b=c.substring(0,j-1);
+			System.out.println(b);
+			
+			for (int e=0;e<b.length();e++) {
+				x2=Integer.valueOf(b.charAt(e));
+				System.out.println(x2);
+				x=x+x2;
+			}
+		}
+		//System.out.println(x);
+
+	}
+
+}

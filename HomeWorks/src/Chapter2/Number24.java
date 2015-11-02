@@ -7,7 +7,7 @@ public class Number24 {
 		
 		//0709 40-44-94
 
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 20; i++) {
 
 			if (first == 1 && second == 1 && counter==0) {
 				System.out.print(first);
