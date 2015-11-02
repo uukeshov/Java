@@ -1,0 +1,19 @@
+package Chapter2;
+
+public class Number8 {
+
+	public static void main(String[] args) {
+		int fact = 2, i = 0, fin = 0, res=0;
+		i = fin = fact;
+
+		while (i > 0) {
+			fact = fin;
+			res = fact * --fact;
+			fin = fact;
+
+			i++;
+		}
+		System.out.println(res);
+	}
+
+}

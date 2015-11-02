@@ -1,0 +1,30 @@
+package Chapter1;
+
+public class Number8 {
+
+	public static void main(String[] args) {
+		int a = 1, b = 2, c = 3, x1, x2, x3;
+
+		if (a > b && a > c && b > c) {
+			x1 = a;
+			x2 = b;
+			x3 = c;
+		} else if (b > a && b > c && a > c) {
+			x1 = b;
+			x2 = a;
+			x3 = c;
+		} else if (c > a && c > c && b > a) {
+			x1 = c;
+			x2 = b;
+			x3 = a;
+	} else if (a > b && b<c) {
+		x1 = a;
+		x2 = c;
+		x3 = b; 
+	}
+		System.out.println(x1);
+		System.out.println(x2);
+		System.out.println(x3);
+}
+
+}
