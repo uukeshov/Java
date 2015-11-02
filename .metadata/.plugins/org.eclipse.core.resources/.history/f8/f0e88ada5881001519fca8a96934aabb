@@ -1,0 +1,23 @@
+package Chapter1;
+
+public class Number5 {
+	public static int a = 21, c;
+	public static String b;
+
+	public static void main(String[] args) {
+
+		b = Integer.toString(a);
+		c = Integer.valueOf(b.substring(0, 1)) + Integer.valueOf(b.substring(1, 2));
+		c = (int) Math.pow(c, 2);
+		if (a > c) {
+			System.out.println("false");
+		} else if (a == c) {
+			System.out.println("equal");
+		} else {
+			System.out.println(c);
+		}
+		System.out.println(a);
+		System.out.println(c);
+	}
+
+}

@@ -1,0 +1,17 @@
+package Chapter1;
+
+public class Number5 {
+public static int a=21,c;
+public static String b,k;
+	public static void main(String[] args) {
+		
+		b=Integer.toString(a);
+		c=Integer.valueOf(b.substring(0,1)+b.substring(1,2));
+		c=(int)Math.pow(c, 2);
+		System.out.println(c);
+		
+		
+
+	}
+
+}
