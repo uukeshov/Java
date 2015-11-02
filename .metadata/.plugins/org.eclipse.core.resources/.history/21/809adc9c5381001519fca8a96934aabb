@@ -9,5 +9,6 @@ public class Number2 {
 		} else {
 			System.out.println("false");
 		}
+
 	}
 }

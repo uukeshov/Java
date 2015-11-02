@@ -1,0 +1,13 @@
+package Chapter1;
+
+public class Number3 {
+public static double a=1,b=2,c=-1,x1,x2,d;
+//D=b^2 - 4ac.
+	public static void main(String[] args) {
+		
+		d=Math.pow(b, 2)-4*a*c;
+		System.out.println(d);
+
+	}
+
+}
