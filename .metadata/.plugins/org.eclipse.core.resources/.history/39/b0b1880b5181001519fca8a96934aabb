@@ -13,6 +13,7 @@ public class Number38 {
 		while (i < len) {
 
 			d = b.charAt(len1 - 1);
+			//System.out.println(d);
 			if (d == '1') {
 				b = b.substring(0, len1 - 1);
 				break;
@@ -22,5 +23,7 @@ public class Number38 {
 		}
 
 		System.out.print(b);
+
 	}
+
 }

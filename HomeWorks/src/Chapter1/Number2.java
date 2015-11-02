@@ -1,0 +1,14 @@
+package Chapter1;
+
+public class Number2 {
+	public static int a = 1, b = 1, c = 1;
+	public static void main(String[] args) {
+		
+		if (a+b>c && a+c>b && c+b>a) {
+			System.out.println("true");
+		} else {
+			System.out.println("false");
+		}
+
+	}
+}
