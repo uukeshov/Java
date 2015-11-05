@@ -1,0 +1,30 @@
+package Chapter5;
+
+import java.util.*;
+
+public class Number8 {
+
+	public static void main(String[] args) {
+		int[] ceil_numbers = { 2, 3, 11, 13, 15, 14, 18, 15, 16, 114, 15, 15, 16, 5, 7, 5, 7, 5, 7, 5,
+				7, 5, 7 };
+		String simpleNumbers = "";
+		int temp, ceil = 0, control = 0;
+
+		for (int i = 0; i < ceil_numbers.length; i++) {
+			temp = ceil_numbers[i];
+			ceil = 0;
+			for (int j = 0; j <= temp; j++) {
+				if (temp != j && j != 1 && j != 0) {
+					ceil = temp % j;
+					if (ceil == 0) {
+						control = 1;
+					}
+				}
+			}
+			if (control == 0 && temp != 1) {
+				simpleNumbers = simpleNumbers + " " + String.valueOf(temp);
+			}
+		}
+		System.out.println(simpleNumbers);
+	}
+}

@@ -1,0 +1,36 @@
+package Chapter5;
+
+import java.util.*;
+
+public class Number8 {
+	public static int[] ceil_numbers = { 1, 2, 3, 4 };
+	public static String simpleNumbers = "";
+	public static int i = 0, j = 0, temp, ceil = 0;
+
+	public static void main(String[] args) {
+
+		while (i < ceil_numbers.length) {
+			temp = ceil_numbers[i];
+			ceil = 0;
+			for (int j = 1; j <= temp; j++) {
+				System.out.println(temp);
+				ceil = temp % j;
+
+				if (temp % j == 0) {
+				} else {
+					break;
+				}
+			}
+
+			if (temp == 0 && temp != 1) {
+				simpleNumbers = simpleNumbers + temp;
+			}
+
+			i++;
+		}
+		/*System.out.println(simpleNumbers);
+		System.out.println(j);
+		System.out.println(i);*/
+		System.out.println(temp);
+	}
+}

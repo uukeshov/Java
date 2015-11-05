@@ -1,0 +1,39 @@
+package Chapter5;
+
+import java.util.*;
+
+public class Number8 {
+	public static int[] ceil_numbers = { 4 };
+	public static String simpleNumbers = "";
+	public static int i = 0, j, temp, ceil = 0;
+
+	public static void main(String[] args) {
+		i = 0;
+		while (i < ceil_numbers.length) {
+			temp = ceil_numbers[i];
+			ceil = 0;
+			j = 1;
+			while (j <= temp) {
+				// System.out.println(temp);
+				//System.out.println(ceil);
+
+				if (temp % j == 0) {
+				} else {
+					ceil= 1;
+				}
+				j++;
+			}
+
+			if (ceil == 0 && temp != 1) {
+				simpleNumbers = simpleNumbers + temp;
+			}
+
+			i++;
+		}
+		/*
+		 * System.out.println(simpleNumbers); System.out.println(j);
+		 * System.out.println(i); System.out.println(temp);
+		 */
+		System.out.println(simpleNumbers);
+	}
+}

@@ -1,0 +1,32 @@
+package Chapter5;
+
+import java.util.*;
+
+public class Number8 {
+
+	public static void main(String[] args) {
+		int[] ceil_numbers = { 2, 3, 11, 55, 5, 7, 5, 7, 5, 7, 5, 7, 5, 7, 5, 7, 5, 7 };
+		String simpleNumbers = "";
+		int j, temp, ceil = 0, control = 0;
+
+		for (int i = 0; i < ceil_numbers.length; i++) {
+			temp = ceil_numbers[i];
+			ceil = 0;
+			j = 1;
+			while (j <= temp) {
+				if (temp != j) {
+					ceil = temp % j;
+					if (ceil == 0) {
+						control = 1;
+					}
+				}
+
+				j++;
+			}
+			if (control == 0 && temp != 1) {
+				simpleNumbers = simpleNumbers + " " + String.valueOf(temp);
+			}
+		}
+		System.out.println(simpleNumbers);
+	}
+}
