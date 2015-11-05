@@ -163,3 +163,247 @@ Caused by: java.io.IOException: The process cannot access the file because anoth
 	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:103)
 	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:187)
 	... 7 more
+
+!ENTRY org.eclipse.egit.core 4 0 2015-11-02 18:00:43.328
+!MESSAGE An exception occurred during push on URI https://github.com/uukeshov/Java.git: Nothing to push.
+!STACK 0
+org.eclipse.jgit.errors.TransportException: Nothing to push.
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1197)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:197)
+	at org.eclipse.egit.ui.internal.push.PushWizard$PushJob.run(PushWizard.java:297)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.egit.ui 4 0 2015-11-02 18:00:43.394
+!MESSAGE Can't connect to any repository: https://github.com/uukeshov/Java.git (Nothing to push.)
+!SESSION 2015-11-05 15:08:23.981 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-05 15:08:55.502
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\uukeshov'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 4 0 2015-11-05 15:44:21.360
+!MESSAGE Checkout conflict with files: 
+.metadata/.log
+.metadata/.plugins/org.eclipse.core.resources/.projects/HomeWorks/.indexes/e4/a5/history.index
+.metadata/.plugins/org.eclipse.core.resources/.projects/HomeWorks/.markers.snap
+.metadata/.plugins/org.eclipse.core.resources/.projects/HomeWorks/.syncinfo.snap
+.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.markers.snap
+.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.syncinfo.snap
+.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap
+.metadata/.plugins/org.eclipse.core.resources/.root/2.tree
+.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
+.metadata/.plugins/org.eclipse.core.resources/2.snap
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs
+.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+.metadata/.plugins/org.eclipse.jdt.core/1870492718.index
+.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties
+.metadata/version.ini
+!STACK 0
+org.eclipse.jgit.api.errors.CheckoutConflictException: Checkout conflict with files: 
+.metadata/.log
+.metadata/.plugins/org.eclipse.core.resources/.projects/HomeWorks/.indexes/e4/a5/history.index
+.metadata/.plugins/org.eclipse.core.resources/.projects/HomeWorks/.markers.snap
+.metadata/.plugins/org.eclipse.core.resources/.projects/HomeWorks/.syncinfo.snap
+.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.markers.snap
+.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.syncinfo.snap
+.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap
+.metadata/.plugins/org.eclipse.core.resources/.root/2.tree
+.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
+.metadata/.plugins/org.eclipse.core.resources/2.snap
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs
+.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+.metadata/.plugins/org.eclipse.jdt.core/1870492718.index
+.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties
+.metadata/version.ini
+	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:413)
+	at org.eclipse.jgit.api.PullCommand.call(PullCommand.java:326)
+	at org.eclipse.egit.core.op.PullOperation$1.run(PullOperation.java:97)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.egit.core.op.PullOperation.execute(PullOperation.java:128)
+	at org.eclipse.egit.ui.internal.pull.PullOperationUI.execute(PullOperationUI.java:140)
+	at org.eclipse.egit.ui.internal.pull.PullOperationUI$1.runInWorkspace(PullOperationUI.java:115)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.CheckoutConflictException: Checkout conflict with files: 
+.metadata/.log
+.metadata/.plugins/org.eclipse.core.resources/.projects/HomeWorks/.indexes/e4/a5/history.index
+.metadata/.plugins/org.eclipse.core.resources/.projects/HomeWorks/.markers.snap
+.metadata/.plugins/org.eclipse.core.resources/.projects/HomeWorks/.syncinfo.snap
+.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.markers.snap
+.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.syncinfo.snap
+.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap
+.metadata/.plugins/org.eclipse.core.resources/.root/2.tree
+.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
+.metadata/.plugins/org.eclipse.core.resources/2.snap
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs
+.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+.metadata/.plugins/org.eclipse.jdt.core/1870492718.index
+.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties
+.metadata/version.ini
+	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:414)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:396)
+	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:288)
+	... 8 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2015-11-05 15:44:35.039
+!MESSAGE An internal error occurred
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of commit command
+	at org.eclipse.jgit.api.CommitCommand.call(CommitCommand.java:296)
+	at org.eclipse.egit.core.op.CommitOperation.commit(CommitOperation.java:243)
+	at org.eclipse.egit.core.op.CommitOperation.access$5(CommitOperation.java:232)
+	at org.eclipse.egit.core.op.CommitOperation$1.run(CommitOperation.java:196)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.egit.core.op.CommitOperation.execute(CommitOperation.java:206)
+	at org.eclipse.egit.ui.internal.commit.CommitJob.run(CommitJob.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: The process cannot access the file because another process has locked a portion of the file
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:302)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:103)
+	at org.eclipse.jgit.api.CommitCommand.createTemporaryIndex(CommitCommand.java:396)
+	at org.eclipse.jgit.api.CommitCommand.call(CommitCommand.java:223)
+	... 7 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2015-11-05 15:45:16.512
+!MESSAGE An internal error occurred
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of commit command
+	at org.eclipse.jgit.api.CommitCommand.call(CommitCommand.java:296)
+	at org.eclipse.egit.core.op.CommitOperation.commit(CommitOperation.java:243)
+	at org.eclipse.egit.core.op.CommitOperation.access$5(CommitOperation.java:232)
+	at org.eclipse.egit.core.op.CommitOperation$1.run(CommitOperation.java:196)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.egit.core.op.CommitOperation.execute(CommitOperation.java:206)
+	at org.eclipse.egit.ui.internal.commit.CommitJob.run(CommitJob.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: The process cannot access the file because another process has locked a portion of the file
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:302)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:103)
+	at org.eclipse.jgit.api.CommitCommand.createTemporaryIndex(CommitCommand.java:396)
+	at org.eclipse.jgit.api.CommitCommand.call(CommitCommand.java:223)
+	... 7 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2015-11-05 15:46:10.087
+!MESSAGE An internal error occurred
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of commit command
+	at org.eclipse.jgit.api.CommitCommand.call(CommitCommand.java:296)
+	at org.eclipse.egit.core.op.CommitOperation.commit(CommitOperation.java:243)
+	at org.eclipse.egit.core.op.CommitOperation.access$5(CommitOperation.java:232)
+	at org.eclipse.egit.core.op.CommitOperation$1.run(CommitOperation.java:196)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.egit.core.op.CommitOperation.execute(CommitOperation.java:206)
+	at org.eclipse.egit.ui.internal.commit.CommitJob.run(CommitJob.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: The process cannot access the file because another process has locked a portion of the file
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:302)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:103)
+	at org.eclipse.jgit.api.CommitCommand.createTemporaryIndex(CommitCommand.java:396)
+	at org.eclipse.jgit.api.CommitCommand.call(CommitCommand.java:223)
+	... 7 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2015-11-05 15:46:20.202
+!MESSAGE Checkout conflict with files: 
+.metadata/.log
+.metadata/.plugins/org.eclipse.core.resources/.projects/HomeWorks/.indexes/e4/a5/history.index
+.metadata/.plugins/org.eclipse.core.resources/.projects/HomeWorks/.markers.snap
+.metadata/.plugins/org.eclipse.core.resources/.projects/HomeWorks/.syncinfo.snap
+.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.markers.snap
+.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.syncinfo.snap
+.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap
+.metadata/.plugins/org.eclipse.core.resources/.root/2.tree
+.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
+.metadata/.plugins/org.eclipse.core.resources/2.snap
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs
+.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+.metadata/.plugins/org.eclipse.jdt.core/1870492718.index
+.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties
+.metadata/version.ini
+!STACK 0
+org.eclipse.jgit.api.errors.CheckoutConflictException: Checkout conflict with files: 
+.metadata/.log
+.metadata/.plugins/org.eclipse.core.resources/.projects/HomeWorks/.indexes/e4/a5/history.index
+.metadata/.plugins/org.eclipse.core.resources/.projects/HomeWorks/.markers.snap
+.metadata/.plugins/org.eclipse.core.resources/.projects/HomeWorks/.syncinfo.snap
+.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.markers.snap
+.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.syncinfo.snap
+.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap
+.metadata/.plugins/org.eclipse.core.resources/.root/2.tree
+.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
+.metadata/.plugins/org.eclipse.core.resources/2.snap
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs
+.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+.metadata/.plugins/org.eclipse.jdt.core/1870492718.index
+.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties
+.metadata/version.ini
+	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:413)
+	at org.eclipse.jgit.api.PullCommand.call(PullCommand.java:326)
+	at org.eclipse.egit.core.op.PullOperation$1.run(PullOperation.java:97)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.egit.core.op.PullOperation.execute(PullOperation.java:128)
+	at org.eclipse.egit.ui.internal.pull.PullOperationUI.execute(PullOperationUI.java:140)
+	at org.eclipse.egit.ui.internal.pull.PullOperationUI$1.runInWorkspace(PullOperationUI.java:115)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.CheckoutConflictException: Checkout conflict with files: 
+.metadata/.log
+.metadata/.plugins/org.eclipse.core.resources/.projects/HomeWorks/.indexes/e4/a5/history.index
+.metadata/.plugins/org.eclipse.core.resources/.projects/HomeWorks/.markers.snap
+.metadata/.plugins/org.eclipse.core.resources/.projects/HomeWorks/.syncinfo.snap
+.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.markers.snap
+.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.syncinfo.snap
+.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap
+.metadata/.plugins/org.eclipse.core.resources/.root/2.tree
+.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
+.metadata/.plugins/org.eclipse.core.resources/2.snap
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs
+.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+.metadata/.plugins/org.eclipse.jdt.core/1870492718.index
+.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt
+.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties
+.metadata/version.ini
+	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:414)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:396)
+	at org.eclipse.jgit.api.MergeCommand.call(MergeCommand.java:288)
+	... 8 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2015-11-05 15:47:00.690
+!MESSAGE An internal error occurred
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of commit command
+	at org.eclipse.jgit.api.CommitCommand.call(CommitCommand.java:296)
+	at org.eclipse.egit.core.op.CommitOperation.commit(CommitOperation.java:243)
+	at org.eclipse.egit.core.op.CommitOperation.access$5(CommitOperation.java:232)
+	at org.eclipse.egit.core.op.CommitOperation$1.run(CommitOperation.java:196)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
+	at org.eclipse.egit.core.op.CommitOperation.execute(CommitOperation.java:206)
+	at org.eclipse.egit.ui.internal.commit.CommitJob.run(CommitJob.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: The process cannot access the file because another process has locked a portion of the file
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:302)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:103)
+	at org.eclipse.jgit.api.CommitCommand.createTemporaryIndex(CommitCommand.java:396)
+	at org.eclipse.jgit.api.CommitCommand.call(CommitCommand.java:223)
+	... 7 more
